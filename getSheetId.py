@@ -49,9 +49,9 @@ def get_credentials():
     return credentials
 
 def main():
-    """Shows basic usage of the Sheets API.
-
+    """
     Creates a Sheets API service object
+    Queries the file of interest for worksheet ids, and stores it into a dictionary
     """
     credentials = get_credentials()
     http = credentials.authorize(httplib2.Http())
